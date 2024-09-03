@@ -16,7 +16,7 @@ public interface OrderMapper {
     @Mapping(source = "webSiteId", target = "id") // Map webSiteId from OrderEntity to id in OrderDTO
     @Mapping(source = "service", target = "service") // Map service entity to service DTO
     @Mapping(source = "game", target = "game") // Map game entity to game DTO
-    @Mapping(source = "orderType", target = "orderType") // Map orderType entity to orderType DTO
+    //@Mapping(source = "orderType", target = "orderType") // Map orderType entity to orderType DTO
     @Mapping(source = "applyToComplete", target = "applyToComplete") // Map applyToComplete entity to applyToComplete DTO
     OrderDTO toDTO(OrderEntity entity);
 
